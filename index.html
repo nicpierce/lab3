@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My First Form</title>
+    </head>
+
+    <body style="background-color:powderblue;">
+        <main>
+            <header>
+                <h1 style="text-align:center;"> <b style="font-size:250%;">Contact Form for Job Search</b></h1>
+                <h3><p>please fill out the form below</p></h3>
+            </header>
+
+            <!-- 
+                OBJECTIVE:
+
+                Add a form that collects user information
+                and user interests. Submit the form to Netlify
+                for processing.
+             -->
+             <form action="./thanks.html" netlify method="post">
+               <fieldset>
+                <legend><h4>Contact Information</h4></legend>
+
+                <p>
+                    <label for="first/LastName"> First/Last Name:</label> <br>
+                    <input type="text" name="first/LastName" id="first/LastName"required maxlength="25" minlength="2">
+                </p>
+                
+                <p>
+                    <label for="Email"> Email:</label> <br>
+                    <input type="text" name="Email" id="Email"required maxlength="25" minlength="2">
+                </p>
+                
+                <p>
+                    <label for="Phone"> Phone:</label> <br>
+                    <input type="Phone" name="d" id="Phone"required maxlength="11" minlength="11">
+                </p>
+        
+            </fieldset>
+        <fieldset>
+            <legend><h4>What Line of Work Intrests You</h4></legend>
+        
+        <p><h5>Please Select all that Applies Interest</h5></p>
+        
+        <ul>
+            <li>
+                <input type= "radio" name="Science&Technology" id="Science&Technology" value="movies">
+                <label for="Science&Technology">Science & Technology</label>
+            </li>
+            <li>
+                <input type= "radio" name="Community&SocialServices" id="Community&SocialServices" value="tv">
+                <label for="Community&SocialServices">Community & Social Services</label>
+            </li>
+            <li>
+                <input type= "radio" name="Arts,Culture&Entertainment" id="Arts,Culture&Entertainment" value="Arts,Culture&Entertainment">
+                <label for="Arts,Culture&Entertainment">Arts, Culture & Entertainment</label>
+            </li>
+        
+              <li>
+            <input type= "radio" name="Business,Management&Administration" id="Business,Management&Administration" value="Business,Management&Administration">
+            <label for="Business,Management&Administration">Business, Management & Administration</label>
+              </li>
+             <li>
+                <input type= "radio" name="Farming,Fishing&Forestry" id="Farming,Fishing&Forestry" value="Farming,Fishing&Forestry">
+            <label for="Farming,Fishing&Forestry">Farming, Fishing & Forestry</label>
+             </li>
+        
+        </ul>
+        </fieldset>    
+
+
+        <p>
+            <input type="submit" value="submit">
+        </p>
+        </form>
+        </main>
+    </body>
+</html>
